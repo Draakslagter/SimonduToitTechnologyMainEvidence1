@@ -39,7 +39,7 @@ namespace UnityEngine.Rendering.HighDefinition
         /// <summary>Uses pre-exposition to enhance color precision.</summary>
         PreExposition = 1,
         /// <summary>Precomputes atmospheric attenuation for the directional light on the CPU. This makes it independent from the fragment's position, which increases performance but reduces accuracy.</summary>
-        PrecomputedAtmosphericAttenuation = 0,
+        PrecomputedAtmosphericAttenuation = 1,
 
         /// <summary>Maximum number of views for XR.</summary>
 #if ENABLE_VR

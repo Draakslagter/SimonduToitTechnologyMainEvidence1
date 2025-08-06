@@ -10,72 +10,96 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
-## [14.0.11] - 2025-02-13
+## [17.0.3] - 2025-02-13
 
-This version is compatible with Unity 2022.3.59f1.
-
-Version Updated
-The version number for this package has increased due to a version update of a related graphics package.
-
-## [14.0.10] - 2024-04-03
-
-This version is compatible with Unity 2022.3.24f1.
+This version is compatible with Unity 6000.0.39f1.
 
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
-## [14.0.9] - 2023-12-21
+## [17.0.2] - 2024-04-02
 
-This version is compatible with Unity 2022.3.18f1.
-
-Version Updated
-The version number for this package has increased due to a version update of a related graphics package.
-
-## [14.0.8] - 2023-09-27
-
-This version is compatible with Unity 2022.3.11f1.
+This version is compatible with Unity 6000.0.0b15.
 
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
-## [14.0.7] - 2023-05-23
+## [17.0.1] - 2023-12-21
 
-This version is compatible with Unity 2022.2.22f1.
-
-Version Updated
-The version number for this package has increased due to a version update of a related graphics package.
-
-## [14.0.6] - 2023-03-24
-
-This version is compatible with Unity 2022.2.13f1.
+This version is compatible with Unity 2023.3.0b2.
 
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
-## [14.0.5] - 2022-12-12
+## [17.0.0] - 2023-09-26
 
-This version is compatible with Unity 2022.2.4f1.
+This version is compatible with Unity 2023.3.0a8.
 
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
-## [14.0.4] - 2022-11-04
+## [16.0.3] - 2023-07-04
 
-This version is compatible with Unity 2022.2.2f1.
+This version is compatible with Unity 2023.3.0a1.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [16.0.2] - 2023-06-28
+
+This version is compatible with Unity 2023.2.0a22.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [16.0.1] - 2023-05-23
+
+This version is compatible with Unity 2023.2.0a17.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [16.0.0] - 2023-03-22
+
+This version is compatible with Unity 2023.2.0a9.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [15.0.3] - 2022-12-02
+
+This version is compatible with Unity 2023.2.0a1.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [15.0.2] - 2022-11-04
+
+This version is compatible with Unity 2023.1.0a23.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [15.0.1] - 2022-08-04
+
+This version is compatible with Unity 2023.1.0a19.
+
+Version Updated
+The version number for this package has increased due to a version update of a related graphics package.
+
+## [15.0.0] - 2022-06-13
+
+This version is compatible with Unity 2023.1.0a6.
 
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
 ## [14.0.3] - 2021-05-09
 
-This version is compatible with Unity 2022.2.0b15.
-
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
 
 ## [14.0.2] - 2021-02-04
-
-This version is compatible with Unity 2022.2.0a14.
 
 Version Updated
 The version number for this package has increased due to a version update of a related graphics package.
