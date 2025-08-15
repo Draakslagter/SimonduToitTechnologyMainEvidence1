@@ -6,14 +6,10 @@ public class PauseMenu : MonoBehaviour
    [SerializeField] private CanvasGroup pauseMenuCanvasGroup;
 
     // Update is called once per frame
-    void Update()
+  
+    public void PauseGame()
     {
-        if (!Input.GetKeyDown(KeyCode.Escape)) return;
-        PauseGame();
-    }
-
-    private void PauseGame()
-    {
+        Debug.Log("Pause Game");
         _isPaused = !_isPaused;
         Time.timeScale = _isPaused ? 0 : 1;
         pauseMenuCanvasGroup.alpha = _isPaused ? 1 : 0;

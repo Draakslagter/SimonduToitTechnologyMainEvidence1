@@ -1,55 +1,62 @@
 using System;
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class PlayerMovementAndControlSetup : MonoBehaviour
 {
-     private CharacterInput _characterInputMap;
-
+   [Header ("Control")]
+    private CharacterInput _characterInputMap;
+    
+    [Header ("Viewport Movement")]
+    [SerializeField] private CinemachinePanTilt cineCamera;
+    
+    [Header ("Movement")]
     private Rigidbody _characterRb;
-    
     private Vector3 _movementVector;
+    [SerializeField] private float speedMultiplier, jumpMultiplier;
     
-    [SerializeField] private float speedMultiplier;
+    [Header ("Jump")]
+    [SerializeField] private Transform groundCheckTransform;
+    [SerializeField] private float groundCheckRadius;
+    [SerializeField] private LayerMask groundLayer;
     
-    [SerializeField] private float jumpMultiplier;
+    public UnityEvent onPause;
 
     private void Awake()
     {
         _characterInputMap = new CharacterInput();
-
-        _characterInputMap.Enable();
         
-        _characterInputMap.PlayerMap.Movement.canceled += x => OnStopMove(x.ReadValue<Vector2>());
-
         if (_characterRb == null)
         {
             _characterRb = GetComponent<Rigidbody>();
         }
     }
 
+    private void OnEnable()
+    {
+        _characterInputMap.Enable();
+    }
     private void OnDisable()
     {
-        _characterInputMap.PlayerMap.Movement.canceled -= x => OnStopMove(x.ReadValue<Vector2>());
+        _characterInputMap.Disable();
     }
 
     private void FixedUpdate()
-    { 
-       _characterRb.transform.Translate(_movementVector * (speedMultiplier * Time.fixedDeltaTime));
+    {
+        var panAngle = cineCamera.PanAxis.Value;
+        var panRotation = Quaternion.Euler(0, panAngle, 0);
+        var movementDirection = panRotation * _movementVector;
+       _characterRb.transform.Translate(movementDirection * (Time.deltaTime * speedMultiplier), Space.World);
+       transform.localRotation = panRotation;
     }
-
+    
     public void OnMove(InputAction.CallbackContext context)
     {
-        _movementVector.x = context.ReadValue<Vector2>().x;
-        _movementVector.z = context.ReadValue<Vector2>().y;
-    }
-
-    private void OnStopMove(Vector2 incomingVector2)
-    {
-        _movementVector.x = 0;
-        _movementVector.z = 0;
+        _movementVector = new Vector3(context.ReadValue<Vector2>().x, 0, context.ReadValue<Vector2>().y);
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -59,7 +66,8 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        Debug.Log("We Paused");
+        Debug.Log("Pause");
+        onPause.Invoke();
     }
 
     public void OnAttack(InputAction.CallbackContext context)
@@ -69,6 +77,17 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        _characterRb.AddForce(Vector3.up * jumpMultiplier, ForceMode.Impulse);
+        var groundArray = Physics.OverlapSphere(groundCheckTransform.position, groundCheckRadius, groundLayer);
+        Debug.Log(groundArray.Length);
+        if (groundArray.Length == 0) return;
+        var jumpVector = new Vector3(0, jumpMultiplier, 0);
+        _characterRb.AddForce(jumpVector, ForceMode.Impulse);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(groundCheckTransform.position, groundCheckRadius);
+        Gizmos.DrawRay(cineCamera.transform.position, cineCamera.transform.forward);
     }
 }
