@@ -8,6 +8,9 @@ using UnityEngine.Serialization;
 
 public class PlayerMovementAndControlSetup : MonoBehaviour
 {
+    private static PlayerMovementAndControlSetup _instance;
+    public static PlayerMovementAndControlSetup Instance => _instance
+    ;
    [Header ("Control")]
     private CharacterInput _characterInputMap;
     
@@ -24,10 +27,19 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private LayerMask groundLayer;
     
-    public static UnityEvent triggerPauseMenu;
+    public UnityEvent triggerPauseMenu;
 
     private void Awake()
     {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+        
         _characterInputMap = new CharacterInput();
         
         if (_characterRb == null)
@@ -66,8 +78,8 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        triggerPauseMenu.Invoke();
-        Debug.Log("Pause");
+        triggerPauseMenu?.Invoke();
+        Debug.Log("Paused from Player");
     }
 
     public void OnAttack(InputAction.CallbackContext context)

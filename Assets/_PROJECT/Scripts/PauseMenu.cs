@@ -5,15 +5,18 @@ public class PauseMenu : MonoBehaviour
    private bool _isPaused;
    [SerializeField] private CanvasGroup pauseMenuCanvasGroup;
 
-    // Update is called once per frame
-  
-    public void PauseGame()
+   private void Start()
+   {
+       PlayerMovementAndControlSetup.Instance.triggerPauseMenu.AddListener(PauseGame);
+   }
+
+   public void PauseGame()
     {
-        Debug.Log("Pause Game");
+        Debug.Log("Paused from Menu");
         _isPaused = !_isPaused;
-        Time.timeScale = _isPaused ? 0 : 1;
         pauseMenuCanvasGroup.alpha = _isPaused ? 1 : 0;
-        pauseMenuCanvasGroup.blocksRaycasts = _isPaused;
-        pauseMenuCanvasGroup.interactable = _isPaused;
+        pauseMenuCanvasGroup.blocksRaycasts = !_isPaused;
+        pauseMenuCanvasGroup.interactable = !_isPaused;
+        Time.timeScale = _isPaused ? 1 : 0;
     }
 }
