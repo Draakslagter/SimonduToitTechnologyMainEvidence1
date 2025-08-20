@@ -24,7 +24,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private LayerMask groundLayer;
     
-    public UnityEvent onPause;
+    public static UnityEvent triggerPauseMenu;
 
     private void Awake()
     {
@@ -66,8 +66,8 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     public void OnPause(InputAction.CallbackContext context)
     {
+        triggerPauseMenu.Invoke();
         Debug.Log("Pause");
-        onPause.Invoke();
     }
 
     public void OnAttack(InputAction.CallbackContext context)
