@@ -2,12 +2,21 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    private static PauseMenu _instance;
+    public static PauseMenu Instance => _instance;
    private bool _isPaused;
    [SerializeField] private CanvasGroup pauseMenuCanvasGroup;
 
-   private void Start()
+   private void Awake()
    {
-       PlayerMovementAndControlSetup.Instance.triggerPauseMenu.AddListener(PauseGame);
+       if (_instance != null && _instance != this)
+       {
+           Destroy(this.gameObject);
+       }
+       else
+       {
+           _instance = this;
+       }
    }
 
    public void PauseGame()

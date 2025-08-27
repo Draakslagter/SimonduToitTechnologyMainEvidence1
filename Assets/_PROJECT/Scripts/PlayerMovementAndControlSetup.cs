@@ -31,14 +31,14 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     private void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-        }
+        // if (_instance != null && _instance != this)
+        // {
+        //     Destroy(this.gameObject);
+        // }
+        // else
+        // {
+        //     _instance = this;
+        // }
         
         _characterInputMap = new CharacterInput();
         
@@ -46,6 +46,11 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
         {
             _characterRb = GetComponent<Rigidbody>();
         }
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void OnEnable()
