@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cc7920f-97fe-4394-8e4e-8840708833a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tree9/Tree9_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/diffuse.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/diffuse.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/normal_specular.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/normal_specular.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/shadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PlayerMovementAndControlSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PlayerMovementAndControlSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Shaders/ShieldShader.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Shaders/ShieldShader.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Shaders/TestShader.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Shaders/TestShader.shadergraph.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="1cc7920f-97fe-4394-8e4e-8840708833a0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +99,7 @@
       <workItem from="1754828576613" duration="37000" />
       <workItem from="1755278456337" duration="9522000" />
       <workItem from="1755684965049" duration="909000" />
-      <workItem from="1756279471562" duration="793000" />
+      <workItem from="1756279471562" duration="1387000" />
     </task>
     <servers />
   </component>
