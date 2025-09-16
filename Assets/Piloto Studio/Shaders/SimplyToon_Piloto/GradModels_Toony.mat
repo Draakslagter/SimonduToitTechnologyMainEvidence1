@@ -27,7 +27,8 @@ Material:
   m_Shader: {fileID: 4800000, guid: 134df03d154adcb4daa9a7f1419c25fc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ALPHATEST_ON
   m_InvalidKeywords:
   - _ADD_PRECOMPUTED_VELOCITY
   - _DISABLE_SSR
@@ -35,10 +36,11 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2225
+  m_CustomRenderQueue: 2475
   stringTagMap:
     IgnoreProjection: False
     MotionVector: User
+    RenderType: TransparentCutout
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -249,7 +251,7 @@ Material:
     - _Add_Antipodean_RimLight: 0
     - _AlbedoAffectEmissive: 0
     - _AlphaCutoff: 0.5
-    - _AlphaCutoffEnable: 0
+    - _AlphaCutoffEnable: 1
     - _AlphaCutoffPostpass: 0.5
     - _AlphaCutoffPrepass: 0.5
     - _AlphaCutoffShadow: 0.5
@@ -490,7 +492,7 @@ Material:
     - _Use_BaseAs1st: 1
     - _ZOverDrawMode: 0
     - _ZTestDepthEqualForOpaque: 3
-    - _ZTestGBuffer: 4
+    - _ZTestGBuffer: 3
     - _ZTestModeDistortion: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1

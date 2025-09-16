@@ -556,6 +556,7 @@ PlayerSettings:
   - serializedVersion: 2
     m_BuildTarget: Switch
     m_EncodingQuality: 2
+  m_BuildTargetGroupHDRCubemapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
