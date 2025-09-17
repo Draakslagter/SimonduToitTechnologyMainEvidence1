@@ -115,7 +115,7 @@ Material:
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _fresnelIntensity: 5
+    - _fresnelIntensity: 1
     - _isActive: 1
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}

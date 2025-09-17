@@ -882,7 +882,7 @@
     "m_TessellationMaxDisplacement": 0.009999999776482582,
     "m_DebugSymbols": false,
     "m_Version": 2,
-    "inspectorFoldoutMask": 1
+    "inspectorFoldoutMask": 9
 }
 
 {
@@ -1249,7 +1249,7 @@
     "m_Title": "Fresnel Effect",
     "m_Position": {
         "x": -1056.0,
-        "y": 225.0
+        "y": 225.00001525878907
     }
 }
 

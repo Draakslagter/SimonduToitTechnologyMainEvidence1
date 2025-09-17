@@ -24,8 +24,8 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Paused from Menu");
         _isPaused = !_isPaused;
         pauseMenuCanvasGroup.alpha = _isPaused ? 1 : 0;
-        pauseMenuCanvasGroup.blocksRaycasts = !_isPaused;
-        pauseMenuCanvasGroup.interactable = !_isPaused;
-        Time.timeScale = _isPaused ? 1 : 0;
+        pauseMenuCanvasGroup.blocksRaycasts = _isPaused;
+        pauseMenuCanvasGroup.interactable = _isPaused;
+        Time.timeScale = _isPaused ? 0 : 1;
     }
 }
