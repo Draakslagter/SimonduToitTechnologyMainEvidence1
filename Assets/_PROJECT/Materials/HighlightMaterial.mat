@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6772346016231420204
+--- !u!114 &-5793130690622704397
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,9 +118,9 @@ Material:
     - _fresnelIntensity: 1
     - _isActive: 1
     m_Colors:
-    - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _fresnelColor: {r: 2.670157, g: 1.3089005, b: 0, a: 0}
-    - _objectColor: {r: 1, g: 1, b: 1, a: 0}
+    - _fresnelColor: {r: 2, g: 0.298604, b: 0, a: 0}
+    - _objectColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

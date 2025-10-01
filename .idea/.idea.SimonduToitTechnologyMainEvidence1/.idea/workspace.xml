@@ -6,20 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="1cc7920f-97fe-4394-8e4e-8840708833a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Fire/Fire_AlphaDistort_Ramped.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Fire/Fire_AlphaDistort_Ramped.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Crescent_Halftone_Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Crescent_Halftone_Add.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_FatDot_Alpha.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_FatDot_Alpha.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_GlowdotPickbook_Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_GlowdotPickbook_Add.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Smoke_HarsherAlbedo_Alpha_Soft.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Smoke_HarsherAlbedo_Alpha_Soft.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Shaders/SimplyToon_Piloto/GradModels_Toony.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Shaders/SimplyToon_Piloto/GradModels_Toony.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPSFont/FPS Gaming Font/Square-Black SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPSFont/FPS Gaming Font/Square-Black SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood1Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood1Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood2Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood2Mat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Input/CharacterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Input/CharacterInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/Exercise.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/Exercise.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.sequences/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.sequences/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/DissolveMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/DissolveMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/FirePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/FirePrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/TreePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/TreePrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Player/PlayerMovementAndControlSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Player/PlayerMovementAndControlSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Tree.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +35,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../Game Production 3 - Finishing (BAGDP2206)/SimonduToitMultiplayerMainEvidence1/Assets/_PROJECT/Scripts/Multiplayer/PlayerLobbyManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Interfaces/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Interfaces/IInteractible.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/PooledObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/NewScriptableObjectScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Zombie/ZombieMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@978211393e28/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@49e016681e2a/Runtime/RenderPipeline/RenderPipelineGlobalSettingsUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition@60d72fd960f4/Runtime/RenderPipeline/HDRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualeffectgraph@ec7212f5004c/Editor/Compiler/VFXGraphCompiledData.cs" root0="SKIP_HIGHLIGHTING" />
@@ -49,36 +54,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.54f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.54f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.54f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.54f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -92,6 +106,7 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -105,6 +120,7 @@
       <option name="selectedOptions">
         <list />
       </option>
+      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
@@ -127,6 +143,7 @@
       <workItem from="1756884155409" duration="12744000" />
       <workItem from="1758132311035" duration="6642000" />
       <workItem from="1759302980747" duration="2548000" />
+      <workItem from="1759321918263" duration="6905000" />
     </task>
     <servers />
   </component>

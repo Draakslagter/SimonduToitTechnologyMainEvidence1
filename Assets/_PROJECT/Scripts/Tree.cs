@@ -22,7 +22,6 @@ public class Tree : MonoBehaviour,  IInteractible
     
     public void Interact()
     {
-        Debug.Log("Chopping Trees");
         if (chopCount >= 3)
         {
             empty = true;

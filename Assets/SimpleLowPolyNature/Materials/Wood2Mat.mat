@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Wood2Mat
-  m_Shader: {fileID: -6465566751694194690, guid: 01805c0dc01c69343b6de77f5f586676, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0530ce7029f81de4da1646f74cd2f259, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -309,8 +309,11 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 1
+    - _dissolveAmount: 0
+    - _dissolveScale: 30
     - _fresnelIntensity: 1
     - _isActive: 1
+    - _outlineThickness: 0.02
     m_Colors:
     - _BaseColor: {r: 0.49019608, g: 0.29411766, b: 0.039215688, a: 0}
     - _Color: {r: 0.490196, g: 0.29411763, b: 0.039215688, a: 0}
@@ -327,7 +330,9 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
+    - _baseColor: {r: 0.49019608, g: 0.29411766, b: 0, a: 0}
     - _fresnelColor: {r: 2, g: 0.298604, b: 0, a: 0}
     - _objectColor: {r: 0.49019608, g: 0.29411766, b: 0.039215688, a: 0}
+    - _outlineColor: {r: 1, g: 0.3266132, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
