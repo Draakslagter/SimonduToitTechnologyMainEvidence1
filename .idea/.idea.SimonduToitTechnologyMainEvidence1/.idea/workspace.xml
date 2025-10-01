@@ -5,157 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cc7920f-97fe-4394-8e4e-8840708833a0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_fresh_Billboard_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_fresh_Billboard_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_fresh_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_fresh_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_nobark_Billboard_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_nobark_Billboard_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_nobark_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_nobark_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old2_Billboard_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old2_Billboard_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old2_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old2_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old_Billboard_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old_Billboard_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_old_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_two_Billboard_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_two_Billboard_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_two_Color.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Materials/Stump_two_Color.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_Billboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_Billboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_Billboard_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_Billboard_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_ao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_ao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_fresh_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_nobark.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_nobark.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_nobark_Billboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_nobark_Billboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_nobark_Billboard_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_nobark_Billboard_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_ao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_ao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_notbark_grib_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old2.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old2.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old2_Billboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old2_Billboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old2_Billboard_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old2_Billboard_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_Billboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_Billboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_Billboard_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_Billboard_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_ao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_ao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_old_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_two.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_two.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_two_Billboard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_two_Billboard.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_two_Billboard_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/Stump_two_Billboard_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_ao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_ao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_old2_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_albedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_albedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_ao.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_ao.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Models/stump_two_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_fresh_prefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_fresh_prefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_nobark_prefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_nobark_prefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_old2_prefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_old2_prefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_old_prefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_old_prefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_two_prefab.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GreenBugGames/Scan Stump Vol.1/Prefabs/Stump_two_prefab.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/normal_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/normal_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/shadow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/translucency_gloss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_2_Textures/translucency_gloss.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/normal_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/normal_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/shadow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/translucency_gloss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_3_Textures/translucency_gloss.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/normal_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/normal_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/shadow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/translucency_gloss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/Tree9_5_Textures/translucency_gloss.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/tree9.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/tree9/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/tree9/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/tree9Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tree9/tree9Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/Shaders/DissolveShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/Shaders/DissolveShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/Shaders/HighlightShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/Shaders/HighlightShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/Cube.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/Cube.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/ObjectPoolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/ObjectPoolManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PlayerMovementAndControlSetup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PlayerMovementAndControlSetup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/TerrainManipulation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/TerrainManipulation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Fire/Fire_AlphaDistort_Ramped.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Fire/Fire_AlphaDistort_Ramped.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Crescent_Halftone_Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Crescent_Halftone_Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_FatDot_Alpha.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_FatDot_Alpha.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_GlowdotPickbook_Add.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Flare_GlowdotPickbook_Add.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Smoke_HarsherAlbedo_Alpha_Soft.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Materials/Shared/Smoke_HarsherAlbedo_Alpha_Soft.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Piloto Studio/Shaders/SimplyToon_Piloto/GradModels_Toony.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Piloto Studio/Shaders/SimplyToon_Piloto/GradModels_Toony.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Input/CharacterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Input/CharacterInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/Exercise.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/Exercise.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.polybrush/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.sequences/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.sequences/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,27 +66,19 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.54f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.54f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.54f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.54f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -236,7 +92,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -250,7 +105,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
@@ -272,6 +126,7 @@
       <workItem from="1756807497770" duration="3233000" />
       <workItem from="1756884155409" duration="12744000" />
       <workItem from="1758132311035" duration="6642000" />
+      <workItem from="1759302980747" duration="2548000" />
     </task>
     <servers />
   </component>
