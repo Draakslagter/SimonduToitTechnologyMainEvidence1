@@ -10,6 +10,11 @@ public class PauseMenu : MonoBehaviour
         PlayerMovementAndControlSetup.Instance.triggerPauseMenu.AddListener(PauseGame);
     }
 
+    private void OnDisable()
+    {
+        PlayerMovementAndControlSetup.Instance.triggerPauseMenu.RemoveListener(PauseGame);
+    }
+
     public void PauseGame()
     {
         _isPaused = !_isPaused;

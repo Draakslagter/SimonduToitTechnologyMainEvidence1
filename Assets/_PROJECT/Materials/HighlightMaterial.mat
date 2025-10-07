@@ -115,12 +115,14 @@ Material:
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
     - _ZWrite: 1
-    - _fresnelIntensity: 1
+    - _fresnelActive: 1
+    - _fresnelIntensity: 5
     - _isActive: 1
+    - _isVisible: 0
     m_Colors:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _fresnelColor: {r: 2, g: 0.298604, b: 0, a: 0}
+    - _fresnelColor: {r: 2.1185474, g: 0.31630337, b: 0, a: 1}
     - _objectColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

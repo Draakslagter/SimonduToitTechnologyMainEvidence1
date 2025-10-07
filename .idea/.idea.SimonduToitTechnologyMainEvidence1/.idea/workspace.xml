@@ -6,25 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="1cc7920f-97fe-4394-8e4e-8840708833a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPSFont/FPS Gaming Font/Square-Black SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPSFont/FPS Gaming Font/Square-Black SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood1Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood1Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood2Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood2Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Input/CharacterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Input/CharacterInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/DissolveMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/DissolveMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Materials/Bg_Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Materials/Bg_Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Materials/Palette256.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Materials/Palette256.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/Bullet00.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/Bullet00.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/FattyCannonG02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/FattyCannonG02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/FattyMortarG02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/FattyMortarG02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Scenes/FattyPolyMortar_Free.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Scenes/FattyPolyMortar_Free.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood1Mat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleLowPolyNature/Materials/Wood1Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain/Terrain_0_0_608a5908-f455-48dc-b16e-d82f9542afe6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/Terrain_0_0_608a5908-f455-48dc-b16e-d82f9542afe6.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterial.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/FirePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/FirePrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/Player.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/Shaders/HighlightShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/Shaders/HighlightShader.shadergraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/TreePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/TreePrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/PauseMenu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Interfaces/IInteractible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Interfaces/IInteractible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Player/PlayerMovementAndControlSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Player/PlayerMovementAndControlSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/SceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Tree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/TreeBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Tree.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/TreeBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/UI/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/UI/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,25 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.54f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -84,7 +83,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\6000.0.54f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\6000.0.58f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -144,6 +143,8 @@
       <workItem from="1758132311035" duration="6642000" />
       <workItem from="1759302980747" duration="2548000" />
       <workItem from="1759321918263" duration="6905000" />
+      <workItem from="1759838470394" duration="7000" />
+      <workItem from="1759845022708" duration="8063000" />
     </task>
     <servers />
   </component>

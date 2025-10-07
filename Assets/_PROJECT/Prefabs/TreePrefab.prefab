@@ -200,11 +200,50 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1931211189434318, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1543343654471068, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6931092423192521150}
   m_SourcePrefab: {fileID: 100100000, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
 --- !u!4 &1490042810569380159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4595654756050798, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+  m_PrefabInstance: {fileID: 1494598814183618129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1493112714466751437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1543343654471068, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+  m_PrefabInstance: {fileID: 1494598814183618129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6931092423192521150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493112714466751437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0782c696bafd4d488ed16e2411b2a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialRenderers:
+  - {fileID: 1506800063911468157}
+  - {fileID: 1508389157272392841}
+  - {fileID: 1508389501763787011}
+--- !u!23 &1506800063911468157 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23884825674443308, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+  m_PrefabInstance: {fileID: 1494598814183618129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1508389157272392841 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23430875037819608, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
+  m_PrefabInstance: {fileID: 1494598814183618129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1508389501763787011 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 23364559723917138, guid: 7191a0df8b6695d449a0f18a361bc311, type: 3}
   m_PrefabInstance: {fileID: 1494598814183618129}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4069364221384420127
@@ -221,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455957966157313408, guid: decec03a9de484948b79da6219847d52, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 455957966157736352, guid: decec03a9de484948b79da6219847d52, type: 3}
       propertyPath: m_LocalScale.x
@@ -317,3 +356,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 570e728b9d9d6c648af032a9dae3a751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerTreeChopped:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6931092423192521150}
+        m_TargetAssemblyTypeName: TurretBehaviour, Assembly-CSharp
+        m_MethodName: ChangeBuildState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

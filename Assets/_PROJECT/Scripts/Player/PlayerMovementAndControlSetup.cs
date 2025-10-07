@@ -30,6 +30,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
     [Header("Stats")] [SerializeField] private CharacterStats playerStats;
 
     [Header("Events")] public UnityEvent triggerPauseMenu;
+    public static Action TriggerClearPreInteract;
 
     #endregion
 
@@ -70,11 +71,21 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         var panAngle = cineCamera.PanAxis.Value;
         var panRotation = Quaternion.Euler(0, panAngle, 0);
         var movementDirection = panRotation * _movementVector;
         _characterRb.transform.Translate(movementDirection * (Time.deltaTime * playerStats.SpeedMultiplier), Space.World);
         transform.localRotation = panRotation;
+        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance);
+        if (!hit.collider)
+        {
+            TriggerClearPreInteract.Invoke();
+            return;
+        }
+        if (hit.collider.gameObject.GetComponent<IInteractible>() == null) return;
+        var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();
+        interactableObject?.PreInteract();
     }
 
     public void OnMove(InputAction.CallbackContext context)
