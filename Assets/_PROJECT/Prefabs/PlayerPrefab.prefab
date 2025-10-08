@@ -313,6 +313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cineCamera: {fileID: 0}
   interactDistance: 5
+  interactLayer:
+    serializedVersion: 2
+    m_Bits: 64
   groundCheckTransform: {fileID: 65751941208693217}
   groundCheckRadius: 0.2
   groundLayer:

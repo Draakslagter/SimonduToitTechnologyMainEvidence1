@@ -7,16 +7,21 @@ public enum TreeState {Standing, Chopped}
 public class TreeBehaviour : MonoBehaviour,  IInteractible
 {
     private static readonly int DissolveAmount = Shader.PropertyToID("_dissolveAmount");
+    
+    private TreeState _treeState = TreeState.Standing;
     private Renderer _materialRenderer;
     private int _chopCount;
-    private TreeState _treeState = TreeState.Standing;
+    
 
     public UnityEvent<TurretBuildState> triggerTreeChopped;
     public static Action<string> TriggerPreInteract;
 
     private void Start()
     {
-        _materialRenderer = GetComponent<Renderer>();
+        if (_materialRenderer == null)
+        {
+            _materialRenderer = GetComponent<Renderer>(); 
+        }
     }
 
     private void FixedUpdate()
@@ -24,9 +29,8 @@ public class TreeBehaviour : MonoBehaviour,  IInteractible
         if (_treeState == TreeState.Standing) return;
         var tempFloat = _materialRenderer.material.GetFloat(DissolveAmount);
         tempFloat += 0.1f * Time.deltaTime;
-        Debug.Log(tempFloat);
         _materialRenderer.material.SetFloat(DissolveAmount, tempFloat);
-        if (!(tempFloat >= 0.5)) return;
+        if (!(tempFloat >= 0.75)) return;
         triggerTreeChopped.Invoke(TurretBuildState.Active);
         gameObject.SetActive(false);
     }

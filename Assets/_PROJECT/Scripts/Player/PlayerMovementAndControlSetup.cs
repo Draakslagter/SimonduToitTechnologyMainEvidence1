@@ -17,8 +17,8 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     [Header("Viewport Movement")] [SerializeField]
     private CinemachinePanTilt cineCamera;
-
     [SerializeField] private float interactDistance;
+    [SerializeField] private LayerMask interactLayer;
 
     [Header("Movement")] private Rigidbody _characterRb;
     private Vector3 _movementVector;
@@ -77,15 +77,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
         var movementDirection = panRotation * _movementVector;
         _characterRb.transform.Translate(movementDirection * (Time.deltaTime * playerStats.SpeedMultiplier), Space.World);
         transform.localRotation = panRotation;
-        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance);
-        if (!hit.collider)
-        {
-            TriggerClearPreInteract.Invoke();
-            return;
-        }
-        if (hit.collider.gameObject.GetComponent<IInteractible>() == null) return;
-        var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();
-        interactableObject?.PreInteract();
+        PreInteract();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -96,7 +88,6 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         var groundArray = Physics.OverlapSphere(groundCheckTransform.position, groundCheckRadius, groundLayer);
-        Debug.Log(groundArray.Length);
         if (groundArray.Length == 0) return;
         var jumpVector = new Vector3(0, playerStats.JumpMultiplier, 0);
         _characterRb.AddForce(jumpVector, ForceMode.Impulse);
@@ -106,9 +97,20 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     #region Interaction Controls
 
+    private void PreInteract()
+    {
+        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance, interactLayer);
+        if (!hit.collider)
+        {
+            TriggerClearPreInteract.Invoke();
+            return;
+        }
+        var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();
+        interactableObject?.PreInteract();
+    }
     public void OnInteract(InputAction.CallbackContext context)
     {
-        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance);
+        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance, interactLayer);
         if (hit.collider == null) return;
         if (hit.collider.gameObject.GetComponent<IInteractible>() == null) return;
         var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();

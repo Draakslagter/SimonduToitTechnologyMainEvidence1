@@ -10,7 +10,7 @@ public class TurretBehaviour : MonoBehaviour, IInteractible
     private static readonly int IsVisible = Shader.PropertyToID("_isVisible");
     private static readonly int FresnelActive = Shader.PropertyToID("_fresnelActive");
     
-    private TurretBuildState _turretBuildState = TurretBuildState.Inactive;
+    [SerializeField] private TurretBuildState _turretBuildState = TurretBuildState.Inactive;
     private TurretActionState _turretActionState = TurretActionState.Idle;
     
     [SerializeField] private Renderer[] materialRenderers;
@@ -30,11 +30,16 @@ public class TurretBehaviour : MonoBehaviour, IInteractible
     public void ChangeBuildState(TurretBuildState newState)
     {
         _turretBuildState = newState;
-        Debug.Log(newState);
+        
+        gameObject.layer = newState switch
+        {
+            TurretBuildState.Active => 6,
+            TurretBuildState.Built => 0,
+            _ => gameObject.layer
+        };
     }
     private void ActivateTurret(int visible)
     {
-        Debug.Log($"Activating Turret: {visible}");
         foreach (var r in materialRenderers)
         {
             r.material.SetInt(IsVisible, visible);
@@ -52,7 +57,6 @@ public class TurretBehaviour : MonoBehaviour, IInteractible
 
     public void PreInteract()
     {
-        Debug.Log("Attempting Activate Turret");
         if (_turretBuildState != TurretBuildState.Active) return;
         TriggerPreInteract.Invoke($"E - Build Turret");
         ActivateTurret(1);
