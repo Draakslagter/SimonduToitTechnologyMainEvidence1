@@ -23,7 +23,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HighlightMaterial
+  m_Name: HighlightMaterialGrey
   m_Shader: {fileID: -6465566751694194690, guid: 01805c0dc01c69343b6de77f5f586676, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

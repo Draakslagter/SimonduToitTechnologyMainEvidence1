@@ -41,6 +41,11 @@ public class TreeBehaviour : MonoBehaviour,  IInteractible
         TriggerPreInteract.Invoke($"E - CHOP");
     }
 
+    public void ClearPreInteract()
+    {
+        throw new NotImplementedException();
+    }
+
     public void Interact()
     {
         if (_chopCount >= 3)
@@ -50,5 +55,10 @@ public class TreeBehaviour : MonoBehaviour,  IInteractible
         }
         _chopCount++;
         PlayerInventory.Instance.AddWood(1);
+    }
+
+    public void UIInteract(int indexs)
+    {
+        throw new NotImplementedException();
     }
 }

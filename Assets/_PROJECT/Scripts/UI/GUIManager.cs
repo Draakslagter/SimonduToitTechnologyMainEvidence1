@@ -8,14 +8,14 @@ public class GUIManager : MonoBehaviour
     private void Awake()
     {
         TreeBehaviour.TriggerPreInteract += UpdatePreInteractText;
-        TurretBehaviour.TriggerPreInteract += UpdatePreInteractText;
+        TurretSelector.TriggerPreInteract += UpdatePreInteractText;
         PlayerMovementAndControlSetup.TriggerClearPreInteract += ClearPreInteractText;
     }
 
     private void OnDisable()
     {
         TreeBehaviour.TriggerPreInteract -= UpdatePreInteractText;
-        TurretBehaviour.TriggerPreInteract -= UpdatePreInteractText;
+        TurretSelector.TriggerPreInteract -= UpdatePreInteractText;
         PlayerMovementAndControlSetup.TriggerClearPreInteract -= ClearPreInteractText;
     }
 

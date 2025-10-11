@@ -145,6 +145,24 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UINext"",
+                    ""type"": ""Button"",
+                    ""id"": ""127a33b3-e354-4397-a335-3b038a3ce787"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""UIPrevious"",
+                    ""type"": ""Button"",
+                    ""id"": ""c761cbd3-21b9-4a61-972a-5566fec7d58f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -323,6 +341,28 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
                     ""action"": ""ViewportMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ad9ef5d-fa8f-43dc-a38e-39f3dc65ad95"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UINext"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6c65fb51-a336-420f-a8f5-9d6aedb7bda9"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UIPrevious"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -337,6 +377,8 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
         m_PlayerMap_Jump = m_PlayerMap.FindAction("Jump", throwIfNotFound: true);
         m_PlayerMap_Attack = m_PlayerMap.FindAction("Attack", throwIfNotFound: true);
         m_PlayerMap_Interact = m_PlayerMap.FindAction("Interact", throwIfNotFound: true);
+        m_PlayerMap_UINext = m_PlayerMap.FindAction("UINext", throwIfNotFound: true);
+        m_PlayerMap_UIPrevious = m_PlayerMap.FindAction("UIPrevious", throwIfNotFound: true);
     }
 
     ~@CharacterInput()
@@ -423,6 +465,8 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerMap_Jump;
     private readonly InputAction m_PlayerMap_Attack;
     private readonly InputAction m_PlayerMap_Interact;
+    private readonly InputAction m_PlayerMap_UINext;
+    private readonly InputAction m_PlayerMap_UIPrevious;
     /// <summary>
     /// Provides access to input actions defined in input action map "PlayerMap".
     /// </summary>
@@ -458,6 +502,14 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "PlayerMap/Interact".
         /// </summary>
         public InputAction @Interact => m_Wrapper.m_PlayerMap_Interact;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMap/UINext".
+        /// </summary>
+        public InputAction @UINext => m_Wrapper.m_PlayerMap_UINext;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMap/UIPrevious".
+        /// </summary>
+        public InputAction @UIPrevious => m_Wrapper.m_PlayerMap_UIPrevious;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -502,6 +554,12 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
             @Interact.started += instance.OnInteract;
             @Interact.performed += instance.OnInteract;
             @Interact.canceled += instance.OnInteract;
+            @UINext.started += instance.OnUINext;
+            @UINext.performed += instance.OnUINext;
+            @UINext.canceled += instance.OnUINext;
+            @UIPrevious.started += instance.OnUIPrevious;
+            @UIPrevious.performed += instance.OnUIPrevious;
+            @UIPrevious.canceled += instance.OnUIPrevious;
         }
 
         /// <summary>
@@ -531,6 +589,12 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
             @Interact.started -= instance.OnInteract;
             @Interact.performed -= instance.OnInteract;
             @Interact.canceled -= instance.OnInteract;
+            @UINext.started -= instance.OnUINext;
+            @UINext.performed -= instance.OnUINext;
+            @UINext.canceled -= instance.OnUINext;
+            @UIPrevious.started -= instance.OnUIPrevious;
+            @UIPrevious.performed -= instance.OnUIPrevious;
+            @UIPrevious.canceled -= instance.OnUIPrevious;
         }
 
         /// <summary>
@@ -613,5 +677,19 @@ public partial class @CharacterInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInteract(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UINext" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUINext(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "UIPrevious" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUIPrevious(InputAction.CallbackContext context);
     }
 }

@@ -59,6 +59,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "UINext",
+                    "type": "Button",
+                    "id": "127a33b3-e354-4397-a335-3b038a3ce787",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UIPrevious",
+                    "type": "Button",
+                    "id": "c761cbd3-21b9-4a61-972a-5566fec7d58f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -235,6 +253,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "ViewportMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1ad9ef5d-fa8f-43dc-a38e-39f3dc65ad95",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UINext",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c65fb51-a336-420f-a8f5-9d6aedb7bda9",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UIPrevious",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

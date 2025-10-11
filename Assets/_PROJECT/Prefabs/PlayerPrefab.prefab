@@ -191,6 +191,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: f5f1222b-a363-48f6-bee1-ddfdc66815a5
     m_ActionName: 'PlayerMap/ViewportMovent[/DualSenseGamepadHID/rightStick,/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3852914690467496733}
+        m_TargetAssemblyTypeName: PlayerMovementAndControlSetup, Assembly-CSharp
+        m_MethodName: OnUINext
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 127a33b3-e354-4397-a335-3b038a3ce787
+    m_ActionName: 'PlayerMap/UINext[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3852914690467496733}
+        m_TargetAssemblyTypeName: PlayerMovementAndControlSetup, Assembly-CSharp
+        m_MethodName: OnUIPrevious
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c761cbd3-21b9-4a61-972a-5566fec7d58f
+    m_ActionName: 'PlayerMap/UIPrevious[/Keyboard/f]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMap

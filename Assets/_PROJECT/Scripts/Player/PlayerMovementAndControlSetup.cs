@@ -140,6 +140,24 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
         triggerPauseMenu.Invoke();
     }
 
+    public void OnUINext(InputAction.CallbackContext context)
+    {
+        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance, interactLayer);
+        if (hit.collider == null) return;
+        if (hit.collider.gameObject.GetComponent<IInteractible>() == null) return;
+        var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();
+        interactableObject?.UIInteract(+1);
+    }
+
+    public void OnUIPrevious(InputAction.CallbackContext context)
+    {
+        Physics.Raycast(cineCamera.transform.position, cineCamera.transform.forward, out var hit, interactDistance, interactLayer);
+        if (hit.collider == null) return;
+        if (hit.collider.gameObject.GetComponent<IInteractible>() == null) return;
+        var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();
+        interactableObject?.UIInteract(-1);
+    }
+
     #endregion
 
     private void OnDrawGizmos()
