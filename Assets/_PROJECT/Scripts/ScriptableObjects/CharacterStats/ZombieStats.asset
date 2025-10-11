@@ -15,5 +15,5 @@ MonoBehaviour:
   health: 100
   healthMax: 100
   damage: 10
-  speedMultiplier: 5
-  jumpMultiplier: 1
+  moveSpeedMultiplier: 3
+  jumpHeightMultiplier: 2

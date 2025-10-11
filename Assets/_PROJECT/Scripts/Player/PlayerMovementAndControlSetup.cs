@@ -75,7 +75,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
         var panAngle = cineCamera.PanAxis.Value;
         var panRotation = Quaternion.Euler(0, panAngle, 0);
         var movementDirection = panRotation * _movementVector;
-        _characterRb.transform.Translate(movementDirection * (Time.deltaTime * playerStats.SpeedMultiplier), Space.World);
+        _characterRb.transform.Translate(movementDirection * (Time.deltaTime * playerStats.MoveSpeedMultiplier), Space.World);
         transform.localRotation = panRotation;
         PreInteract();
     }
@@ -89,7 +89,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
     {
         var groundArray = Physics.OverlapSphere(groundCheckTransform.position, groundCheckRadius, groundLayer);
         if (groundArray.Length == 0) return;
-        var jumpVector = new Vector3(0, playerStats.JumpMultiplier, 0);
+        var jumpVector = new Vector3(0, playerStats.JumpHeightMultiplier, 0);
         _characterRb.AddForce(jumpVector, ForceMode.Impulse);
     }
 

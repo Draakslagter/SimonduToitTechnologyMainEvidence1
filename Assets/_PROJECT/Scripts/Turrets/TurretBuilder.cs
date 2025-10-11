@@ -3,13 +3,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-public enum TurretActionState {Idle, Reloading, Firing}
+
 public class TurretBuilder : MonoBehaviour
 {
     private static readonly int IsVisible = Shader.PropertyToID("_isVisible");
     private static readonly int FresnelActive = Shader.PropertyToID("_fresnelActive");
     
-    private TurretActionState _turretActionState = TurretActionState.Idle;
+   
     
     [SerializeField] private Renderer[] materialRenderers;
     
