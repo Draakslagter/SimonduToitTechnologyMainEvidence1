@@ -19,7 +19,6 @@ public enum TurretFiringState
 
 public class TurretFiring : MonoBehaviour
 {
-    private TurretBuildState _turretBuildState = TurretBuildState.Inactive;
     private TurretMovementState _turretMovementState = TurretMovementState.Idle;
     private TurretFiringState _turretFiringState = TurretFiringState.Firing;
 
@@ -44,7 +43,6 @@ public class TurretFiring : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (_turretBuildState != TurretBuildState.Built) return;
         switch (_turretMovementState)
         {
             case TurretMovementState.Idle when _turretFiringState != TurretFiringState.Reloading:
@@ -59,11 +57,7 @@ public class TurretFiring : MonoBehaviour
                 break;
         }
     }
-
-    public void CheckTurretBuilt(TurretBuildState turretBuildState)
-    {
-        _turretBuildState = turretBuildState;
-    }
+    
     private void TurretIdle()
     {
         _currentTarget = null;

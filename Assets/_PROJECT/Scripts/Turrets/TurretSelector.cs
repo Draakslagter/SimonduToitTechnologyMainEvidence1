@@ -11,7 +11,6 @@ public class TurretSelector : MonoBehaviour, IInteractible
     private int _currentTurretIndex;
     
     public static Action<string> TriggerPreInteract;
-    public UnityEvent<TurretBuildState> triggerBuild;
     
     private void Awake()
     {
@@ -47,7 +46,6 @@ public class TurretSelector : MonoBehaviour, IInteractible
     public void ChangeBuildState(TurretBuildState newState)
     {
         _turretBuildState = newState;
-        triggerBuild.Invoke(_turretBuildState);
         
         gameObject.layer = newState switch
         {

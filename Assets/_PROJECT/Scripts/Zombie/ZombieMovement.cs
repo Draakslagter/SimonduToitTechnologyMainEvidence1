@@ -1,21 +1,42 @@
 using UnityEngine;
 
-public class ZombieMovement : MonoBehaviour
+public class ZombieMovement : MonoBehaviour,IDamageable
 {
+    [Header("Movement")] 
     private Rigidbody _characterRb;
     private Transform _characterTransform;
-    private Transform _playerTransform;
-    [SerializeField] private float speedMultiplier;
+    private Vector3 _movementVector;
+    
+    private Transform _fireTransform;
+    [SerializeField] private CharacterStats zombieStats;
 
     private void Start()
     {
-        _characterRb = GetComponent<Rigidbody>();
-        _characterTransform = GetComponent<Transform>();
-        _playerTransform = PlayerMovementAndControlSetup.Instance.gameObject.transform;
+        if (_characterRb == null)
+        {
+            _characterRb = GetComponent<Rigidbody>();
+        }
+
+        if (_characterTransform == null)
+        {
+            _characterTransform = GetComponent<Transform>();
+        }
+    }
+    public void SetTargets(Transform fireTransform)
+    {
+        _fireTransform = fireTransform;
+        Debug.Log("Set Targets");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        _characterTransform.position = Vector3.MoveTowards(_characterTransform.position, _playerTransform.position, speedMultiplier * Time.fixedDeltaTime);
+        if (!_fireTransform) return;
+        _movementVector = (_fireTransform.position - _characterTransform.position).normalized;
+        _characterRb.transform.Translate(_movementVector * (Time.deltaTime * zombieStats.MoveSpeedMultiplier));
+    }
+
+    public void TakeDamage(float damage)
+    {
+        zombieStats.Health -= damage;
     }
 }

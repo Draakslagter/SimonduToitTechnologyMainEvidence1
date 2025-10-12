@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class ZombieSpawner : MonoBehaviour
 {
-   [SerializeField] private GameObject zombiePrefab;
+   [SerializeField] private ZombieMovement zombiePrefab;
    [SerializeField] private Transform[] spawnPoints;
    [SerializeField] private float zombieSpawnRate;
-   [SerializeField] private Transform playerTransform;
+   [SerializeField] private Transform fireTransform;
 
    public void SpawnZombie()
    {
-      ObjectPoolManager.SpawnObject(zombiePrefab,spawnPoints[Random.Range(0, spawnPoints.Length)], Quaternion.identity);
+      Debug.Log("Spawning Zombie");
+      var tempHolder = ObjectPoolManager.SpawnObject(zombiePrefab,spawnPoints[Random.Range(0, spawnPoints.Length)], Quaternion.identity);
+      tempHolder.SetTargets(fireTransform);
    }
 }
