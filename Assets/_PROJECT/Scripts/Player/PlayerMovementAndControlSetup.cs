@@ -6,7 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
-public class PlayerMovementAndControlSetup : MonoBehaviour
+public class PlayerMovementAndControlSetup : MonoBehaviour, IDamageable
 {
     #region Variables
 
@@ -160,10 +160,16 @@ public class PlayerMovementAndControlSetup : MonoBehaviour
 
     #endregion
 
+    public void TakeDamage(float damage)
+    {
+        playerStats.Health -= damage;
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(groundCheckTransform.position, groundCheckRadius);
         Gizmos.DrawRay(cineCamera.transform.position, cineCamera.transform.forward);
     }
+
+    
 }

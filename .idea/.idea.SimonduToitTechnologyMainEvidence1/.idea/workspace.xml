@@ -6,18 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="1cc7920f-97fe-4394-8e4e-8840708833a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimonduToitTechnologyMainEvidence1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterialBrown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterialBrown.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterialGrey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Materials/HighlightMaterialGrey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/Bullet00.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FattyPolyTurretFree/Prefabs/Bullet00.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/TreePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Prefabs/TreePrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/ObjectPoolManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/ObjectPoolManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/PooledObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/PooledObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/Spawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/Spawner.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Player/PlayerMovementAndControlSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Player/PlayerMovementAndControlSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats/CharacterStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats/CharacterStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats/PlayerStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats/PlayerStats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats/ZombieStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats/ZombieStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/TurretStats/CannonStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/TurretStats/CannonStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/TurretStats/MortarStats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/TurretStats/MortarStats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/TurretStats/TurretStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/TurretStats/TurretStats.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretBuilder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretFiring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretFiring.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretSelector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretSelector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretTypes/CannonFiring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretTypes/CannonFiring.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretTypes/MortarFiring.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/TurretTypes/MortarFiring.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +34,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/25ce29052dfe4e49a635a42f7798806b1e0000/27/51ebe9aa/ObjectPool`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Interfaces/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Interfaces/IInteractible.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/PooledObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/ScriptableObjects/CharacterStats.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/_UnityProjects/SimonduToitTechnologyMainEvidence1/Assets/_PROJECT/Scripts/TreeBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Turrets/BulletBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/Zombie/ZombieMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -140,6 +145,7 @@
       <workItem from="1760169829705" duration="4250000" />
       <workItem from="1760174494802" duration="8976000" />
       <workItem from="1760189601172" duration="11816000" />
+      <workItem from="1760260151301" duration="16312000" />
     </task>
     <servers />
   </component>
@@ -156,24 +162,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/_PROJECT/Scripts/ObjectPooling/ObjectPoolManager.cs</url>
-          <line>102</line>
-          <properties documentPath="D:\_Schoolwork\Year 2\Semester 2\Game Studies 3 - Technology (BAGDP2205)\SimonduToitTechnologyMainEvidence1\Assets\_PROJECT\Scripts\ObjectPooling\ObjectPoolManager.cs" containingFunctionPresentation="Method 'OnReleaseObject'">
-            <startOffsets>
-              <option value="3147" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3148" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

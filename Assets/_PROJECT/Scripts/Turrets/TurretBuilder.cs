@@ -9,8 +9,6 @@ public class TurretBuilder : MonoBehaviour
     private static readonly int IsVisible = Shader.PropertyToID("_isVisible");
     private static readonly int FresnelActive = Shader.PropertyToID("_fresnelActive");
     
-   
-    
     [SerializeField] private Renderer[] materialRenderers;
     
     public void ActivateTurret(int visible)

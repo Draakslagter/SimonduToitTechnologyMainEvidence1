@@ -1,110 +1,148 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Serialization;
 
-public enum TurretActionState
+public enum TurretMovementState
 {
     Idle,
     Targeting,
-    Firing
+}
+
+public enum TurretFiringState
+{
+    Firing,
+    Reloading
 }
 
 public class TurretFiring : MonoBehaviour
 {
-    private TurretActionState _turretActionState = TurretActionState.Idle;
+    private TurretBuildState _turretBuildState = TurretBuildState.Inactive;
+    private TurretMovementState _turretMovementState = TurretMovementState.Idle;
+    private TurretFiringState _turretFiringState = TurretFiringState.Firing;
 
-    [SerializeField] private Transform _turretTransform;
-    [SerializeField] private TurretStats turretStats;
+    [Header("Turret Variables")] 
+    [SerializeField] private Transform turretTransform;
 
-    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] protected TurretStats turretStats;
+
+    [Header("Target Variables")] [SerializeField]
+    private LayerMask enemyLayer;
+
     private Collider _currentTarget;
     private Transform _targetTransform;
 
     private void Awake()
     {
-        if (_turretTransform == null)
+        if (turretTransform == null)
         {
-            _turretTransform = GetComponent<Transform>();
+            turretTransform = GetComponent<Transform>();
         }
     }
-
-    private void Update()
+    
+    private void FixedUpdate()
     {
-        var targetsArray = Physics.OverlapSphere(_turretTransform.position, turretStats.TargetingRadius, enemyLayer);
-        var inRangeArray = Physics.OverlapSphere(_turretTransform.position, turretStats.TargetingRadius, enemyLayer);
-        
-        if (targetsArray.Length == 0)
+        if (_turretBuildState != TurretBuildState.Built) return;
+        switch (_turretMovementState)
         {
-            _currentTarget = null;
-            TurretIdle();
-        }
-        // else if (inRangeArray.Contains(_currentTarget))
-        // {
-        //     ShootTarget();
-        // }
-        else
-        {
-            SetCurrentTarget(targetsArray);
-            if (!DOTween.IsTweening(_turretTransform.gameObject))
-            {
-                _turretTransform.DOLookAt(_targetTransform.position, turretStats.TurnTime);
-            }
-            ShootTarget();
+            case TurretMovementState.Idle when _turretFiringState != TurretFiringState.Reloading:
+                TurretIdle();
+                break;
+            case TurretMovementState.Targeting when _turretFiringState == TurretFiringState.Firing:
+                SetCurrentTarget();
+                AimTurret();
+                break;
+            default:
+                ReloadTurret();
+                break;
         }
     }
 
+    public void CheckTurretBuilt(TurretBuildState turretBuildState)
+    {
+        _turretBuildState = turretBuildState;
+    }
     private void TurretIdle()
     {
-        if (DOTween.IsTweening(_turretTransform)) return;
-        if (_turretTransform.forward != new Vector3(0, 0, 1))
+        _currentTarget = null;
+        var targetsArray = Physics.OverlapSphere(turretTransform.position, turretStats.TargetingRadius, enemyLayer);
+        if (targetsArray.Length != 0)
         {
-            _turretTransform.DORotate(Vector3.zero, turretStats.TurnTime);
+            DOTween.Kill(turretTransform);
+            _turretMovementState = TurretMovementState.Targeting;
+            return;
+        }
+        
+        if (DOTween.IsTweening(turretTransform)) return;
+        if (turretTransform.forward != new Vector3(0, 0, 1))
+        {
+            turretTransform.DORotate(Vector3.zero, turretStats.TurnTime).SetEase(turretStats.TurretMoveEase);
         }
         else
         {
-            _turretActionState = TurretActionState.Idle;
+            _turretMovementState = TurretMovementState.Idle;
             var leftDirection = Quaternion.AngleAxis(-45, transform.up);
             var rightDirection = Quaternion.AngleAxis(+45, transform.up);
-            _turretTransform.DORotate(leftDirection.eulerAngles, turretStats.TurnTime).SetEase(Ease.OutSine).SetLoops(2, LoopType.Yoyo)
+            turretTransform.DORotate(leftDirection.eulerAngles, turretStats.TurnTime).SetEase(turretStats.TurretMoveEase)
+                .SetLoops(2, LoopType.Yoyo)
                 .OnComplete(() =>
                 {
-                    _turretTransform.DORotate(rightDirection.eulerAngles, turretStats.TurnTime).SetLoops(2, LoopType.Yoyo);
+                    turretTransform.DORotate(rightDirection.eulerAngles, turretStats.TurnTime)
+                        .SetEase(turretStats.TurretMoveEase).SetLoops(2, LoopType.Yoyo);
                 });
         }
-       
     }
 
-    private void SetCurrentTarget(Collider[] targets)
+    private void SetCurrentTarget()
     {
-        _turretActionState = TurretActionState.Targeting;
+        var targetsArray = Physics.OverlapSphere(turretTransform.position, turretStats.TargetingRadius, enemyLayer);
+       
+        if (targetsArray.Length == 0)
+        {
+            DOTween.Kill(turretTransform);
+            _turretMovementState = TurretMovementState.Idle;
+            return;
+        }
+        
         var targetDistances = new List<float>();
-        foreach (var target in targets)
+        foreach (var target in targetsArray)
         {
             target.TryGetComponent<Transform>(out var targetTransform);
-            var targetDistance = Vector3.Distance(_turretTransform.position, targetTransform.position);
+            var targetDistance = Vector3.Distance(turretTransform.position, targetTransform.position);
             targetDistances.Add(targetDistance);
         }
-        _currentTarget = targets[targetDistances.IndexOf(targetDistances.Min())];
+        
+        _currentTarget = targetsArray[targetDistances.IndexOf(targetDistances.Min())];
         _currentTarget.TryGetComponent(out _targetTransform);
     }
 
-    private void ShootTarget()
+    private void AimTurret()
     {
-        Debug.Log(TargetInCone());
+        if (!DOTween.IsTweening(turretTransform))
+        {
+            turretTransform.DOLookAt(_targetTransform.position, turretStats.TurnTime);
+        }
+        var inRangeArray = Physics.OverlapSphere(turretTransform.position, turretStats.TargetingRadius, enemyLayer);
+        
+        if (!inRangeArray.Contains(_currentTarget) || !TargetInCone()) return;
+        ShootTurret(_currentTarget, _targetTransform);
     }
-
+    
     private bool TargetInCone()
     {
-        var targetDirection = (_targetTransform.position - _turretTransform.position).normalized;
-        var leftDirection = (Quaternion.AngleAxis(-45, transform.up)*_turretTransform.forward * turretStats.FiringRadius).normalized;
-        var rightDirection = (Quaternion.AngleAxis(+45, transform.up)*_turretTransform.forward * turretStats.FiringRadius).normalized;
-       
+        var targetDirection = (_targetTransform.position - turretTransform.position).normalized;
+        var leftDirection =
+            (Quaternion.AngleAxis(-45, transform.up) * turretTransform.forward * turretStats.FiringRadius).normalized;
+        var rightDirection =
+            (Quaternion.AngleAxis(+45, transform.up) * turretTransform.forward * turretStats.FiringRadius).normalized;
+
         var angleToLeft = Vector3.SignedAngle(leftDirection, targetDirection, Vector3.up);
         var angleBetweenBounds = Vector3.SignedAngle(leftDirection, rightDirection, Vector3.up);
-        
+
         var isBetween = false;
-        
+
         if (angleBetweenBounds >= 0)
         {
             if (angleToLeft >= 0 && angleToLeft <= angleBetweenBounds)
@@ -112,7 +150,7 @@ public class TurretFiring : MonoBehaviour
                 isBetween = true;
             }
         }
-        else 
+        else
         {
             if (angleToLeft <= 0 && angleToLeft >= angleBetweenBounds)
             {
@@ -122,22 +160,32 @@ public class TurretFiring : MonoBehaviour
 
         return isBetween;
     }
-    private void FiringDirection()
+
+    private void ReloadTurret()
     {
+        if (DOTween.IsTweening(turretTransform)) return;
+        var upRotation = new Vector3(-45, turretTransform.localEulerAngles.y, turretTransform.localEulerAngles.z);
+        turretTransform.DORotate(upRotation, turretStats.TurnTime/2).SetEase(turretStats.TurretMoveEase).SetLoops(2, LoopType.Yoyo).OnComplete(() => { _turretFiringState = TurretFiringState.Firing;});
     }
 
+    protected virtual void ShootTurret(Collider target, Transform targetTransform = null)
+    {
+        _turretFiringState = TurretFiringState.Reloading;
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(_turretTransform.position, turretStats.TargetingRadius);
+        Gizmos.DrawWireSphere(turretTransform.position, turretStats.TargetingRadius);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(_turretTransform.position, turretStats.FiringRadius);
+        Gizmos.DrawWireSphere(turretTransform.position, turretStats.FiringRadius);
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(_turretTransform.position, _turretTransform.forward);
+        Gizmos.DrawRay(turretTransform.position, turretTransform.forward);
         Gizmos.color = Color.green;
         var leftDirection = Quaternion.AngleAxis(-45, transform.up);
         var rightDirection = Quaternion.AngleAxis(+45, transform.up);
-        Gizmos.DrawRay(_turretTransform.position, leftDirection * _turretTransform.forward * turretStats.FiringRadius);
-        Gizmos.DrawRay(_turretTransform.position, rightDirection * _turretTransform.forward * turretStats.FiringRadius);
+        
+        Gizmos.DrawRay(turretTransform.position, leftDirection * turretTransform.forward * turretStats.FiringRadius);
+        Gizmos.DrawRay(turretTransform.position, rightDirection * turretTransform.forward * turretStats.FiringRadius);
+    
     }
 }

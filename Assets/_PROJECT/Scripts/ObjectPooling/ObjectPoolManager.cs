@@ -147,23 +147,19 @@ public class ObjectPoolManager : MonoBehaviour
             {
                 return obj as T;
             }
-            
-            T component  = obj.GetComponent<T>();
-            if (component != null)
-            {
-                Debug.LogError($"Object {objectToSpawn.name} doesn't have a component of type {typeof(T)}");
-                return null;
-            }
-            
-            return component;
+
+            obj.TryGetComponent(out T component);
+            if (component) return component;
+            Debug.LogError($"Object {objectToSpawn.name} doesn't have a component of type {typeof(T)}");
         }
         return null;
     }
 
+    // ReSharper disable Unity.PerformanceAnalysis
     public static T SpawnObject<T>(T typePrefab, Vector3 spawnPosition, Quaternion spawnRotation,
         PoolType poolType = PoolType.GameObjects) where T : Component
     {
-        return SpawnObject<T>(typePrefab, spawnPosition, spawnRotation, poolType);
+        return SpawnObject<T>(typePrefab.gameObject, spawnPosition, spawnRotation, poolType);
     }
 
     public static GameObject SpawnObject(GameObject objectToSpawn, Vector3 spawnPosition, Quaternion spawnRotation,
@@ -197,22 +193,18 @@ public class ObjectPoolManager : MonoBehaviour
             {
                 return obj as T;
             }
-            
-            T component  = obj.GetComponent<T>();
-            if (component != null)
-            {
-                Debug.LogError($"Object {objectToSpawn.name} doesn't have a component of type {typeof(T)}");
-                return null;
-            }
-            
-            return component;
+
+            obj.TryGetComponent(out T component);
+            if (component) return component;
+            Debug.LogError($"Object {objectToSpawn.name} doesn't have a component of type {typeof(T)}");
         }
         return null;
     }
+    // ReSharper disable Unity.PerformanceAnalysis
     public static T SpawnObject<T>(T typePrefab, Transform parent, Quaternion spawnRotation,
         PoolType poolType = PoolType.GameObjects) where T : Component
     {
-        return SpawnObject<T>(typePrefab, parent, spawnRotation, poolType);
+        return SpawnObject<T>(typePrefab.gameObject, parent, spawnRotation, poolType);
     }
 
     public static GameObject SpawnObject(GameObject objectToSpawn, Transform parent, Quaternion spawnRotation,
@@ -222,6 +214,7 @@ public class ObjectPoolManager : MonoBehaviour
     }
 
     
+    // ReSharper disable Unity.PerformanceAnalysis
     public static void ReturnObjectToPool(GameObject gameObject, PoolType poolType = PoolType.GameObjects)
     {
         if (_cloneToPrefabMap.TryGetValue(gameObject, out GameObject prefab))
@@ -234,6 +227,7 @@ public class ObjectPoolManager : MonoBehaviour
 
             if (_objectsPools.TryGetValue(prefab, out ObjectPool<GameObject> pool))
             {
+                Debug.Log($"Returning object {gameObject.name}");
                 pool.Release(gameObject);
             }
         }

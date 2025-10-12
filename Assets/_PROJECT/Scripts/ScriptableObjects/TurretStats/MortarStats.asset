@@ -20,5 +20,4 @@ MonoBehaviour:
   firingRadius: 19
   damage: 25
   reloadTime: 5
-  bulletAmount: 5
-  clipSize: 5
+  turretMoveEase: 1

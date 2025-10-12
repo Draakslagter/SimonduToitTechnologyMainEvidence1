@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum TurretBuildState {Inactive, Active, Built}
 public class TurretSelector : MonoBehaviour, IInteractible
@@ -10,12 +11,20 @@ public class TurretSelector : MonoBehaviour, IInteractible
     private int _currentTurretIndex;
     
     public static Action<string> TriggerPreInteract;
+    public UnityEvent<TurretBuildState> triggerBuild;
     
     private void Awake()
     {
         PlayerMovementAndControlSetup.TriggerClearPreInteract += ClearPreInteract;
     }
 
+    private void Start()
+    {
+        foreach (var turretBuilder in turrets)
+        {
+            turretBuilder.ActivateTurret(0);
+        }
+    }
     private void OnDisable()
     {
         PlayerMovementAndControlSetup.TriggerClearPreInteract -= ClearPreInteract;
@@ -38,6 +47,7 @@ public class TurretSelector : MonoBehaviour, IInteractible
     public void ChangeBuildState(TurretBuildState newState)
     {
         _turretBuildState = newState;
+        triggerBuild.Invoke(_turretBuildState);
         
         gameObject.layer = newState switch
         {
