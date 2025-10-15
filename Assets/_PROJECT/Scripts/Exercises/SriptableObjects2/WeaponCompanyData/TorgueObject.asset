@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf78ab13bf3bc04f9a339454a713975, type: 3}
+  m_Name: TorgueObject
+  m_EditorClassIdentifier: 
+  companyName: 4
+  elementalDamageType: 0
+  gunDamage: 0
+  gunBarrelAccuracy: 0
+  gunReloadSpeed: 0
+  gunStability: 0
+  gunMagazineSize: 0
+  gunAmmoCapacity: 0
+  gunScopeZoom: 0
+  gunFiringSpeed: 0
+  gunPositiveModifier: 0
+  gunNegativeModifier: 0
+  gunModifierThreshold: 0

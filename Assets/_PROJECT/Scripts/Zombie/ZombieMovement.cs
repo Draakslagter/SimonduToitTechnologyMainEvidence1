@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ZombieMovement : MonoBehaviour,IDamageable
 {
@@ -8,7 +9,7 @@ public class ZombieMovement : MonoBehaviour,IDamageable
     private Vector3 _movementVector;
     
     private Transform _fireTransform;
-    [SerializeField] private CharacterStats zombieStats;
+    [FormerlySerializedAs("zombieStats")] [SerializeField] private CharacterDataObject zombieDataObject;
 
     private void Start()
     {
@@ -32,11 +33,11 @@ public class ZombieMovement : MonoBehaviour,IDamageable
     {
         if (!_fireTransform) return;
         _movementVector = (_fireTransform.position - _characterTransform.position).normalized;
-        _characterRb.transform.Translate(_movementVector * (Time.deltaTime * zombieStats.MoveSpeedMultiplier));
+        _characterRb.transform.Translate(_movementVector * (Time.deltaTime * zombieDataObject.MoveSpeedMultiplier));
     }
 
     public void TakeDamage(float damage)
     {
-        zombieStats.Health -= damage;
+        zombieDataObject.Health -= damage;
     }
 }

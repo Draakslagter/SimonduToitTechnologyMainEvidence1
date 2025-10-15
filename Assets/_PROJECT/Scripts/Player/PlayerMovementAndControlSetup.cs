@@ -27,7 +27,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour, IDamageable
     [SerializeField] private float groundCheckRadius;
     [SerializeField] private LayerMask groundLayer;
 
-    [Header("Stats")] [SerializeField] private CharacterStats playerStats;
+    [FormerlySerializedAs("playerStats")] [Header("Stats")] [SerializeField] private CharacterDataObject playerDataObject;
 
     [Header("Events")] public UnityEvent triggerPauseMenu;
     public static Action TriggerClearPreInteract;
@@ -75,7 +75,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour, IDamageable
         var panAngle = cineCamera.PanAxis.Value;
         var panRotation = Quaternion.Euler(0, panAngle, 0);
         var movementDirection = panRotation * _movementVector;
-        _characterRb.transform.Translate(movementDirection * (Time.deltaTime * playerStats.MoveSpeedMultiplier), Space.World);
+        _characterRb.transform.Translate(movementDirection * (Time.deltaTime * playerDataObject.MoveSpeedMultiplier), Space.World);
         transform.localRotation = panRotation;
         PreInteract();
     }
@@ -89,7 +89,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour, IDamageable
     {
         var groundArray = Physics.OverlapSphere(groundCheckTransform.position, groundCheckRadius, groundLayer);
         if (groundArray.Length == 0) return;
-        var jumpVector = new Vector3(0, playerStats.JumpHeightMultiplier, 0);
+        var jumpVector = new Vector3(0, playerDataObject.JumpHeightMultiplier, 0);
         _characterRb.AddForce(jumpVector, ForceMode.Impulse);
     }
 
@@ -124,7 +124,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour, IDamageable
         if (hit.collider.gameObject.GetComponent<IDamageable>() != null)
         {
             var damageableObject = hit.collider.gameObject.GetComponent<IDamageable>();
-            damageableObject?.TakeDamage(playerStats.Damage);
+            damageableObject?.TakeDamage(playerDataObject.Damage);
         }
         if (hit.collider.gameObject.GetComponent<IInteractible>() == null) return;
         var interactableObject = hit.collider.gameObject.GetComponent<IInteractible>();
@@ -162,7 +162,7 @@ public class PlayerMovementAndControlSetup : MonoBehaviour, IDamageable
 
     public void TakeDamage(float damage)
     {
-        playerStats.Health -= damage;
+        playerDataObject.Health -= damage;
     }
     private void OnDrawGizmos()
     {

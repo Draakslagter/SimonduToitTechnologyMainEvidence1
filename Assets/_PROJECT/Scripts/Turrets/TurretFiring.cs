@@ -25,7 +25,7 @@ public class TurretFiring : MonoBehaviour
     [Header("Turret Variables")] 
     [SerializeField] private Transform turretTransform;
 
-    [SerializeField] protected TurretStats turretStats;
+    [FormerlySerializedAs("turretStats")] [SerializeField] protected TurretDataObject turretDataObject;
 
     [Header("Target Variables")] [SerializeField]
     private LayerMask enemyLayer;
@@ -61,7 +61,7 @@ public class TurretFiring : MonoBehaviour
     private void TurretIdle()
     {
         _currentTarget = null;
-        var targetsArray = Physics.OverlapSphere(turretTransform.position, turretStats.TargetingRadius, enemyLayer);
+        var targetsArray = Physics.OverlapSphere(turretTransform.position, turretDataObject.TargetingRadius, enemyLayer);
         if (targetsArray.Length != 0)
         {
             DOTween.Kill(turretTransform);
@@ -72,26 +72,26 @@ public class TurretFiring : MonoBehaviour
         if (DOTween.IsTweening(turretTransform)) return;
         if (turretTransform.forward != new Vector3(0, 0, 1))
         {
-            turretTransform.DORotate(Vector3.zero, turretStats.TurnTime).SetEase(turretStats.TurretMoveEase);
+            turretTransform.DORotate(Vector3.zero, turretDataObject.TurnTime).SetEase(turretDataObject.TurretMoveEase);
         }
         else
         {
             _turretMovementState = TurretMovementState.Idle;
             var leftDirection = Quaternion.AngleAxis(-45, transform.up);
             var rightDirection = Quaternion.AngleAxis(+45, transform.up);
-            turretTransform.DORotate(leftDirection.eulerAngles, turretStats.TurnTime).SetEase(turretStats.TurretMoveEase)
+            turretTransform.DORotate(leftDirection.eulerAngles, turretDataObject.TurnTime).SetEase(turretDataObject.TurretMoveEase)
                 .SetLoops(2, LoopType.Yoyo)
                 .OnComplete(() =>
                 {
-                    turretTransform.DORotate(rightDirection.eulerAngles, turretStats.TurnTime)
-                        .SetEase(turretStats.TurretMoveEase).SetLoops(2, LoopType.Yoyo);
+                    turretTransform.DORotate(rightDirection.eulerAngles, turretDataObject.TurnTime)
+                        .SetEase(turretDataObject.TurretMoveEase).SetLoops(2, LoopType.Yoyo);
                 });
         }
     }
 
     private void SetCurrentTarget()
     {
-        var targetsArray = Physics.OverlapSphere(turretTransform.position, turretStats.TargetingRadius, enemyLayer);
+        var targetsArray = Physics.OverlapSphere(turretTransform.position, turretDataObject.TargetingRadius, enemyLayer);
        
         if (targetsArray.Length == 0)
         {
@@ -116,9 +116,9 @@ public class TurretFiring : MonoBehaviour
     {
         if (!DOTween.IsTweening(turretTransform))
         {
-            turretTransform.DOLookAt(_targetTransform.position, turretStats.TurnTime);
+            turretTransform.DOLookAt(_targetTransform.position, turretDataObject.TurnTime);
         }
-        var inRangeArray = Physics.OverlapSphere(turretTransform.position, turretStats.TargetingRadius, enemyLayer);
+        var inRangeArray = Physics.OverlapSphere(turretTransform.position, turretDataObject.TargetingRadius, enemyLayer);
         
         if (!inRangeArray.Contains(_currentTarget) || !TargetInCone()) return;
         ShootTurret(_currentTarget, _targetTransform);
@@ -128,9 +128,9 @@ public class TurretFiring : MonoBehaviour
     {
         var targetDirection = (_targetTransform.position - turretTransform.position).normalized;
         var leftDirection =
-            (Quaternion.AngleAxis(-45, transform.up) * turretTransform.forward * turretStats.FiringRadius).normalized;
+            (Quaternion.AngleAxis(-45, transform.up) * turretTransform.forward * turretDataObject.FiringRadius).normalized;
         var rightDirection =
-            (Quaternion.AngleAxis(+45, transform.up) * turretTransform.forward * turretStats.FiringRadius).normalized;
+            (Quaternion.AngleAxis(+45, transform.up) * turretTransform.forward * turretDataObject.FiringRadius).normalized;
 
         var angleToLeft = Vector3.SignedAngle(leftDirection, targetDirection, Vector3.up);
         var angleBetweenBounds = Vector3.SignedAngle(leftDirection, rightDirection, Vector3.up);
@@ -159,7 +159,7 @@ public class TurretFiring : MonoBehaviour
     {
         if (DOTween.IsTweening(turretTransform)) return;
         var upRotation = new Vector3(-45, turretTransform.localEulerAngles.y, turretTransform.localEulerAngles.z);
-        turretTransform.DORotate(upRotation, turretStats.TurnTime/2).SetEase(turretStats.TurretMoveEase).SetLoops(2, LoopType.Yoyo).OnComplete(() => { _turretFiringState = TurretFiringState.Firing;});
+        turretTransform.DORotate(upRotation, turretDataObject.TurnTime/2).SetEase(turretDataObject.TurretMoveEase).SetLoops(2, LoopType.Yoyo).OnComplete(() => { _turretFiringState = TurretFiringState.Firing;});
     }
 
     protected virtual void ShootTurret(Collider target, Transform targetTransform = null)
@@ -169,17 +169,17 @@ public class TurretFiring : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(turretTransform.position, turretStats.TargetingRadius);
+        Gizmos.DrawWireSphere(turretTransform.position, turretDataObject.TargetingRadius);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(turretTransform.position, turretStats.FiringRadius);
+        Gizmos.DrawWireSphere(turretTransform.position, turretDataObject.FiringRadius);
         Gizmos.color = Color.red;
         Gizmos.DrawRay(turretTransform.position, turretTransform.forward);
         Gizmos.color = Color.green;
         var leftDirection = Quaternion.AngleAxis(-45, transform.up);
         var rightDirection = Quaternion.AngleAxis(+45, transform.up);
         
-        Gizmos.DrawRay(turretTransform.position, leftDirection * turretTransform.forward * turretStats.FiringRadius);
-        Gizmos.DrawRay(turretTransform.position, rightDirection * turretTransform.forward * turretStats.FiringRadius);
+        Gizmos.DrawRay(turretTransform.position, leftDirection * turretTransform.forward * turretDataObject.FiringRadius);
+        Gizmos.DrawRay(turretTransform.position, rightDirection * turretTransform.forward * turretDataObject.FiringRadius);
     
     }
 }

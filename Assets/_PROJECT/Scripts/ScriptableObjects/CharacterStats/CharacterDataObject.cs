@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CharacterStats", menuName = "Scriptable Objects/CharacterStats")]
-public class CharacterStats : ScriptableObject
+[CreateAssetMenu(fileName = "CharacterStats", menuName = "Scriptable Objects/CharacterDataObject")]
+public class CharacterDataObject : ScriptableObject
 {
     [SerializeField] private float health, healthMax, damage, moveSpeedMultiplier, jumpHeightMultiplier;
     

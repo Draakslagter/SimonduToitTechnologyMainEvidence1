@@ -1,8 +1,8 @@
 using DG.Tweening;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "TurretStats", menuName = "Scriptable Objects/TurretStats")]
-public class TurretStats : ScriptableObject
+[CreateAssetMenu(fileName = "TurretStats", menuName = "Scriptable Objects/TurretDataObject")]
+public class TurretDataObject : ScriptableObject
 {
     [SerializeField] private float cost, health, healthMax, targetingRadius, turnTime, firingRadius, damage,reloadTime;
     [SerializeField] private Ease turretMoveEase;

@@ -8,7 +8,7 @@ public class MortarFiring : TurretFiring
     {
         base.ShootTurret(target, targetTransform);
         var tempHolder = ObjectPoolManager.SpawnObject(bulletPrefab, shootTransform.position, shootTransform.rotation);
-        tempHolder.LaunchProjectile(targetTransform, turretStats.ReloadTime/2, turretStats.TargetingRadius/4, turretStats.Damage);
+        tempHolder.LaunchProjectile(targetTransform, turretDataObject.ReloadTime/2, turretDataObject.TargetingRadius/4, turretDataObject.Damage);
         //Add VFX anim
         //Add Sound
     }

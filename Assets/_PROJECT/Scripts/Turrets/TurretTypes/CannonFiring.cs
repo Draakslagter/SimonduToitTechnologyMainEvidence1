@@ -6,7 +6,7 @@ public class CannonFiring : TurretFiring
     {
         base.ShootTurret(target, targetTransform);
         target.TryGetComponent(out IDamageable damageable);
-        damageable.TakeDamage(turretStats.Damage);
+        damageable.TakeDamage(turretDataObject.Damage);
         //Add VFX anim
         //Add Sound
         
