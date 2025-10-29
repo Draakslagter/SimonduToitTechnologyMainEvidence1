@@ -3,8 +3,16 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     private bool _isPaused;
-    [SerializeField] private CanvasGroup pauseMenuCanvasGroup;
+    private CanvasGroup _pauseMenuCanvasGroup;
 
+    private void Awake()
+    {
+        if (_pauseMenuCanvasGroup == null)
+        {
+            _pauseMenuCanvasGroup = GetComponent<CanvasGroup>();
+        }
+    }
+    
     private void Start()
     {
         PlayerMovementAndControlSetup.Instance.triggerPauseMenu.AddListener(PauseGame);
@@ -18,9 +26,7 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame()
     {
         _isPaused = !_isPaused;
-        pauseMenuCanvasGroup.alpha = _isPaused ? 1 : 0;
-        pauseMenuCanvasGroup.blocksRaycasts = _isPaused;
-        pauseMenuCanvasGroup.interactable = _isPaused;
+        UICanvasGroupBehaviour.Instance.ShowActiveCanvasGroup(_isPaused ? _pauseMenuCanvasGroup : null);
         Time.timeScale = _isPaused ? 0 : 1;
     }
 }
