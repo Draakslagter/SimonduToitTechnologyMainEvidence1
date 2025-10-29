@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3077495530313310963}
   - component: {fileID: 7202701821856423043}
   - component: {fileID: 4275319328056748837}
+  - component: {fileID: 6464544499153653289}
   m_Layer: 6
   m_Name: TreePrefab
   m_TagString: Untagged
@@ -89,6 +90,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &6464544499153653289
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638154979462320136}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.4, y: 1.5, z: 0.4}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3288574612639049597
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretTransform: {fileID: 1489890390984489305}
-  turretStats: {fileID: 11400000, guid: 6994222d5dfbc89439fcf694befaf3e5, type: 2}
+  turretDataObject: {fileID: 11400000, guid: 6994222d5dfbc89439fcf694befaf3e5, type: 2}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -712,7 +729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretTransform: {fileID: 4286662181545928677}
-  turretStats: {fileID: 11400000, guid: c98027d639c24bf48ae522b555f8cd1b, type: 2}
+  turretDataObject: {fileID: 11400000, guid: c98027d639c24bf48ae522b555f8cd1b, type: 2}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256

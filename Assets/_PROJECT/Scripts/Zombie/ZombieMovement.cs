@@ -1,43 +1,100 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Serialization;
 
 public class ZombieMovement : MonoBehaviour,IDamageable
 {
     [Header("Movement")] 
-    private Rigidbody _characterRb;
-    private Transform _characterTransform;
-    private Vector3 _movementVector;
-    
+    private NavMeshAgent _zombieAgent;
+
+    private List<Transform> _waypoints = new();
+    private int _currentWaypointIndex;
     private Transform _fireTransform;
-    [FormerlySerializedAs("zombieStats")] [SerializeField] private CharacterDataObject zombieDataObject;
+
+    [SerializeField] private int moveToken;
+
+    [SerializeField] private float destinationCheckTimer;
+    
+    [SerializeField] private ZombieDataObject zombieDataObject;
+
+    private void Awake()
+    {
+        if (_zombieAgent == null)
+        {
+            _zombieAgent = GetComponent<NavMeshAgent>();
+        }
+    }
 
     private void Start()
     {
-        if (_characterRb == null)
-        {
-            _characterRb = GetComponent<Rigidbody>();
-        }
-
-        if (_characterTransform == null)
-        {
-            _characterTransform = GetComponent<Transform>();
-        }
+        _zombieAgent.speed = zombieDataObject.MoveSpeed;
+        _zombieAgent.angularSpeed = zombieDataObject.TurnSpeed;
+        _zombieAgent.acceleration = zombieDataObject.Acceleration;
+        _zombieAgent.stoppingDistance = zombieDataObject.StoppingDistance;
+        StartCoroutine(DestinationCheckRoutine());
     }
-    public void SetTargets(Transform fireTransform)
+    
+    public void SetWaypoints(Transform[] wayPoints, int spawnIndex, Transform fireTransform)
     {
+        foreach (var waypoint in wayPoints)
+        {
+            _waypoints.Add(waypoint);
+        }
+        
+        _zombieAgent.Warp(wayPoints[spawnIndex].position);
+        
+        _currentWaypointIndex = spawnIndex;
+        
         _fireTransform = fireTransform;
-        Debug.Log("Set Targets");
     }
 
-    private void FixedUpdate()
+    private void SetNewWaypointIndex()
     {
-        if (!_fireTransform) return;
-        _movementVector = (_fireTransform.position - _characterTransform.position).normalized;
-        _characterRb.transform.Translate(_movementVector * (Time.deltaTime * zombieDataObject.MoveSpeedMultiplier));
+        var oldWaypointIndex = _currentWaypointIndex;
+        while (_currentWaypointIndex == oldWaypointIndex)
+        {
+            _currentWaypointIndex = oldWaypointIndex + Random.Range(-1, 1);
+            if (_currentWaypointIndex < 0)
+            {
+                _currentWaypointIndex = _waypoints.Count - 1;
+            }
+            if (_currentWaypointIndex >= _waypoints.Count)
+            {
+                _currentWaypointIndex = 0;
+            }
+        }
+    }
+    private void SetNewDestination()
+    {
+        SetNewWaypointIndex();
+        if (moveToken != 0)
+        {
+            _zombieAgent.SetDestination(_waypoints[_currentWaypointIndex].position);
+            moveToken--;
+        }
+        else
+        {
+            _zombieAgent.SetDestination(_fireTransform.position);
+            _zombieAgent.stoppingDistance = 5;
+        }
+    }
+
+    private IEnumerator DestinationCheckRoutine()
+    {
+        while (gameObject.activeSelf)
+        {
+            yield return new WaitForSeconds(destinationCheckTimer);
+            if (_zombieAgent.remainingDistance <= _zombieAgent.stoppingDistance)
+            {
+                SetNewDestination();
+            }
+        }
     }
 
     public void TakeDamage(float damage)
     {
-        zombieDataObject.Health -= damage;
+        
     }
 }

@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc357d053620bd4381becbcf7852789, type: 3}
-  m_Name: ZombieStats
+  m_Script: {fileID: 11500000, guid: 4da81b6f6ad37204f9ebf6d2ed91d096, type: 3}
+  m_Name: BasicZombieData
   m_EditorClassIdentifier: 
-  health: 100
   healthMax: 100
   damage: 10
-  moveSpeedMultiplier: 3
-  jumpHeightMultiplier: 2
+  stoppingDistance: 0.5
+  moveSpeed: 5
